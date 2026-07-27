@@ -1,0 +1,44 @@
+Repository: papi-ai/example
+Files analyzed: 3
+Estimated tokens: 1.1k
+
+Directory structure:
+└── example/
+    ├── README.md
+    └── src/
+        ├── Order.php
+        └── Money.php
+
+================================================
+FILE: README.md
+================================================
+# Example
+
+A fixture repository.
+
+================================================
+FILE: src/Order.php
+================================================
+<?php
+
+namespace Shop;
+
+class Order implements Payable
+{
+    public function total(Money $money): Money
+    {
+        return $money;
+    }
+}
+
+================================================
+FILE: src/Money.php
+================================================
+<?php
+
+namespace Shop;
+
+final class Money
+{
+}
+
